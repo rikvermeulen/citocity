@@ -2,10 +2,17 @@
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header ("Movement Parameters")]
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
+
+    [Header("Layers")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
+
+    [Header("Sounds")]
+    [SerializeField] private AudioClip jumpSound;
+
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D boxCollider;
@@ -20,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
-    private void Update()
+private void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
 
@@ -47,8 +54,13 @@ public class PlayerMovement : MonoBehaviour
             else
                 body.gravityScale = 7;
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) && isGrounded())
+            {
                 Jump();
+
+                if (Input.GetKeyDown(KeyCode.Space))
+                    SoundManager.instance.PlaySound(jumpSound);
+            }
         }
         else
             wallJumpCooldown += Time.deltaTime;
