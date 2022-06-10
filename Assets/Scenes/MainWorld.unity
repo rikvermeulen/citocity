@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 229922506}
   - component: {fileID: 229922508}
   m_Layer: 0
-  m_Name: LangDoor
+  m_Name: LangBuilding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1281,7 +1281,7 @@ GameObject:
   - component: {fileID: 1059358909}
   - component: {fileID: 1059358911}
   m_Layer: 0
-  m_Name: MathDoor
+  m_Name: MathBuilding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1311,7 +1311,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1059358907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af1056fa0026148e2a7aeb47098f4db9, type: 3}
+  m_Script: {fileID: 11500000, guid: 62c8c937ce7db4923a0db9c2a0a52aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &1059358910
@@ -1458,7 +1458,7 @@ SpriteRenderer:
   m_Size: {x: 4.7, y: 7.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1144823637
@@ -2056,7 +2056,7 @@ SpriteRenderer:
   m_Size: {x: 4.7, y: 7.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1683553384
@@ -2444,6 +2444,7 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 256
+  jumpSound: {fileID: 0}
 --- !u!95 &1839265568
 Animator:
   serializedVersion: 4
@@ -2949,7 +2950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2105913052}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
