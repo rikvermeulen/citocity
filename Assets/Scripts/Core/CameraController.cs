@@ -2,29 +2,25 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    //Room camera
-    [SerializeField] private float speed;
-    private float currentPosX;
-    private Vector3 velocity = Vector3.zero;
+    // Should scale from mouse position to coordinates
+    private int dragSpeed = 35;
+    private Vector3 dragOrigin;
 
-    //Follow player
-    [SerializeField] private Transform player;
-    [SerializeField] private float aheadDistance;
-    [SerializeField] private float cameraSpeed;
-    private float lookAhead;
-
-    private void Update()
+    void Update()
     {
-        //Room camera
-        transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPosX, transform.position.y, transform.position.z), ref velocity, speed);
+        if (Input.GetMouseButtonDown(0))
+        {
+            dragOrigin = Input.mousePosition;
+            return;
+        }
 
-        //Follow player
-        transform.position = new Vector3(player.position.x + lookAhead, transform.position.y, transform.position.z);
-        lookAhead = Mathf.Lerp(lookAhead, (aheadDistance * player.localScale.x), Time.deltaTime * cameraSpeed);
-    }
+        if (!Input.GetMouseButton(0)) return;
 
-    public void MoveToNewRoom(Transform _newRoom)
-    {
-        currentPosX = _newRoom.position.x;
+        Vector3 pos = Camera.main.ScreenToViewportPoint(dragOrigin - Input.mousePosition);
+        Vector3 move = new Vector3(pos.x * dragSpeed, 0, pos.y * dragSpeed);
+
+        dragOrigin = Input.mousePosition;
+
+        transform.Translate(move, Space.World);
     }
 }
