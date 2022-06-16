@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/rikvermeulen/projects/unity/citocity
+C:/Users/gegas/Documents/Unity/citocity
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59999
-Successfully changed project path to: /Users/rikvermeulen/projects/unity/citocity
-/Users/rikvermeulen/projects/unity/citocity
+55041
+Successfully changed project path to: C:/Users/gegas/Documents/Unity/citocity
+C:/Users/gegas/Documents/Unity/citocity
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -54,125 +54,43 @@ Successfully changed project path to: /Users/rikvermeulen/projects/unity/citocit
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 140.77 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 149.72 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.4f1 (cb45f9cae8b7)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.4f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/rikvermeulen/projects/unity/citocity/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gegas/Documents/Unity/citocity/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
- preferred device: Apple M1 Pro (high power)
-Metal devices available: 1
-0: Apple M1 Pro (high power)
-Using device Apple M1 Pro (high power)
-Initializing Metal device caps: Apple M1 Pro
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 530 (ID=0x191b)
+    Vendor:   Intel
+    VRAM:     8137 MB
+    Driver:   26.20.100.8142
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.4f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/2021.3.4f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56467
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2021.3.4f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2021.3.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001991 seconds.
-Native extension for OSXStandalone target not found
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010936 seconds.
+Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 125.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 146.39 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.889 seconds
+- Completed reload, in  1.008 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1891ms)
-		BeginReloadAssembly (196ms)
+	ReloadAssembly (1009ms)
+		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (4ms)
-		EndReloadAssembly (1392ms)
-			LoadAssemblies (191ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (166ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (1016ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (24ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (126ms)
-				BeforeProcessingInitializeOnLoad (4ms)
-				ProcessInitializeOnLoadAttributes (641ms)
-				ProcessInitializeOnLoadMethodAttributes (220ms)
-				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003122 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 128.74 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:48 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
-
-(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  3.925 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3929ms)
-		BeginReloadAssembly (287ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (44ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (3280ms)
-			LoadAssemblies (149ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (414ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (83ms)
-			SetupLoadedEditorAssemblies (2379ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (129ms)
-				BeforeProcessingInitializeOnLoad (175ms)
-				ProcessInitializeOnLoadAttributes (1882ms)
-				ProcessInitializeOnLoadMethodAttributes (176ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launching external process: /Applications/Unity/Hub/Editor/2021.3.4f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.28 seconds
-Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4080 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (43.3 KB). Loaded Objects now: 4538.
 Memory consumption went from 275.8 MB to 275.8 MB.
 Total: 12.931542 ms (FindLiveObjects: 0.272584 ms CreateObjectMapping: 0.122625 ms MarkObjects: 12.405459 ms  DeleteObjects: 0.128833 ms)
 
@@ -234,7 +152,6 @@ Domain Reload Profiling:
 			RebuildScriptCaches (63ms)
 			SetupLoadedEditorAssemblies (1833ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (33ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (131ms)
@@ -497,14 +414,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
 Registered in 0.003138 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Users/rikvermeulen/projects/unity/citocity/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
