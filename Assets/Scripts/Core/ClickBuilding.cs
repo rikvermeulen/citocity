@@ -14,7 +14,7 @@ public class ClickBuilding : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) {
             Vector2 cubeRay = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D cubeHit = Physics2D.Raycast(cubeRay, Vector2.zero);
-            if (cubeHit.collider.name == gameObject.name) {
+            if (cubeHit && cubeHit.collider.name == gameObject.name) {
                 oldMousePos = getMousePos2D();
                 clicking = true;
             }
