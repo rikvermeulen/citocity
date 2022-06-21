@@ -9,8 +9,29 @@ public class CameraController : MonoBehaviour
     private int yFactor = 18;
     private Vector3 dragOrigin;
 
+    public float maxZoom = 10;
+    public float minZoom = 30;
+    public float sensitivity = 1;
+    public float speed = 30;
+    private float targetZoom = 20f;
+
     void Update()
     {
+        moveCamera();
+        zoomCamera();
+    }
+
+    void zoomCamera() {
+        Camera cam = Camera.main;
+        if (Input.mouseScrollDelta.y != 0) {
+            targetZoom -= Input.mouseScrollDelta.y * sensitivity;
+            targetZoom = Mathf.Clamp(targetZoom, maxZoom, minZoom);
+            float newSize = Mathf.MoveTowards(cam.orthographicSize, targetZoom, speed * Time.deltaTime);
+            cam.orthographicSize = newSize;
+        }
+    }
+
+    void moveCamera() {
         if (Input.GetMouseButtonDown(0))
         {
             dragOrigin = Input.mousePosition;
@@ -25,5 +46,6 @@ public class CameraController : MonoBehaviour
         transform.Translate(move, Space.World);
 
         dragOrigin = Input.mousePosition;
-    }
+   }
+
 }
