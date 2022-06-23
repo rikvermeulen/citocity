@@ -13,10 +13,16 @@ public class GoalManager : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            Debug.Log("test");
 
             PopUpSystem pop = GameObject.FindGameObjectWithTag("GameController").GetComponent<PopUpSystem>();
             pop.PopUp(popUp);
             // cam.MoveToNewRoom(nextRoom);
         }
+    }
+
+    public void nextQuestion()
+    {
+        cam.MoveToNewRoom(nextRoom);
     }
 }
